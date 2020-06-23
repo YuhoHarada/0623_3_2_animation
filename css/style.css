@@ -1,0 +1,48 @@
+body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+}
+
+div:nth-of-type(1){
+    background: red;
+    animation: myanime linear 1s 0s infinite;
+}
+
+div:nth-of-type(2){
+    background: orange;
+    animation: myanime linear 1s 200ms infinite;
+}
+
+div:nth-of-type(3){
+    background: yellowgreen;
+    animation: myanime linear 1s 400ms infinite;
+}
+
+div:nth-of-type(4){
+    background: blue;
+    animation: myanime linear 1s 600ms infinite;
+}
+
+div:nth-of-type(5){
+    background: indigo;
+    animation: myanime linear 1s 800ms infinite;
+}
+
+@keyframes myanime{
+    0%, 100% {
+        margin-top: -10vh;
+    }
+
+    50%{
+        margin-top: 10vh;
+    }
+}
